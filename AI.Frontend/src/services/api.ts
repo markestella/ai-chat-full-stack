@@ -49,6 +49,7 @@ export default async function fetchAPI<T = unknown>(
       const errorData = await res.json();
       errorMsg = errorData.message || errorMsg;
     } catch {
+      // ignore JSON parse errors
     }
     throw new Error(errorMsg);
   }
@@ -69,11 +70,12 @@ async function refreshAccessToken(): Promise<boolean> {
 
   try {
     const user = JSON.parse(userString);
+
     if (user?.isGuest) return false;
 
     const res = await fetch(`${API_BASE_URL}/auth/refresh`, {
       method: "POST",
-      credentials: "include",
+      credentials: "include", 
     });
 
     if (!res.ok) return false;
