@@ -186,7 +186,6 @@ public static class SeedData
         using var scope = serviceProvider.CreateScope();
         var userManager = scope.ServiceProvider.GetRequiredService<UserManager<User>>();
         
-        // Seed admin user if not exists
         if (!userManager.Users.Any())
         {
             var adminUser = new User
