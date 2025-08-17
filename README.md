@@ -1,4 +1,4 @@
-# 🚀 Full-Stack Demo Project — React + .NET Chatbot
+# Full-Stack Demo Project — React + .NET Chatbot
 
 > **⚠️ Disclaimer** > This is a **demo version** of the application. The live environment is for testing purposes only.  
 > Please **do not input any sensitive or confidential information**.
@@ -97,7 +97,7 @@ npm -v
 ### 2️⃣ Clone the Repository
 
 ```bash
-git clone [https://github.com/your-username/your-fullstack-repo.git](https://github.com/your-username/your-fullstack-repo.git)
+git clone git@github.com:markestella/ai-chat-full-stack.git
 cd your-fullstack-repo
 ```
 
@@ -112,7 +112,7 @@ First, let's get the .NET API server running.
     ```
 
 2.  **Configure Environment Variables:**
-    Create an `appsettings.Development.json` file in the backend's root directory and populate it with your credentials.
+    Create an `appsettings.json` file in the backend's root directory and populate it with your credentials.
 
     ```json
     {
@@ -169,7 +169,7 @@ Now, let's start the React development server. **Open a new terminal window** fo
     npm run dev
     ```
 
-    The frontend application should now be running and accessible at `http://localhost:5173`. It will connect to the backend API running on port 5208.
+    The frontend application should now be running and accessible at `http://localhost:5173`. It will connect to the backend API running on port 5262.
 
 -----
 
@@ -193,7 +193,7 @@ Now, let's start the React development server. **Open a new terminal window** fo
 
 You can test the backend API independently using its built-in Swagger UI.
 
-1.  **Access Swagger UI:** With the backend running, navigate to `https://localhost:5208/swagger/index.html`.
+1.  **Access Swagger UI:** With the backend running, navigate to `https://localhost:5262/swagger/index.html`.
 
 2.  **Test Authentication Flow:**
 
